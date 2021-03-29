@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://scrollhunt.pixel-fy.com/bars/2/bar.css');
+::-webkit-scrollbar-track {
+    background-color: #99bbad;
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+header h1 {
+    font-size: 60px;
+    color: #2E2E2E;
+    margin-bottom: 0;
+}
+header h1 span {
+    color: #5f939a;
+}
+header p {
+    font-size: 20px;
+    color: #525252;
+    margin-bottom: 0;
+}
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 5px solid #99bbad;
+    background-color: white;
+    border-radius:  15px;
+    resize: none;
+    height: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    outline: none;
+  }
+  
+  
+  input[type=submit] {
+    font-size: 20px;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 5px solid #99bbad;
+    background-color: white;
+    color: #929292;
+    border-radius: 15px;
+    bottom: 0;
+    transition: 0.1s;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  input[type=submit]:hover {
+    background-color: #99bbad;
+    color: white;
+  }
+  main {
+      margin-left: 35%;
+      margin-right: 35%;
+  }
+  @media only screen and (max-width: 600px) {
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+header a {
+    color: #99bbad;
+    transition: 0.2s;
+    text-decoration: none;
+}
+header a:hover {
+    color: #5f939a;
+}
