@@ -27,7 +27,7 @@ header p {
   textarea {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0 0;
     box-sizing: border-box;
     border: 5px solid #99bbad;
     background-color: white;
@@ -37,12 +37,13 @@ header p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     outline: none;
+    margin-bottom: 0;
   }
   
   
   input[type=submit] {
     font-size: 20px;
-    width: 40%;
+    width: 49.5%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -77,4 +78,35 @@ header a {
 }
 header a:hover {
     color: #5f939a;
+}
+
+select  {
+  font-size: 20px;
+  width: 49%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 5px solid #99bbad;
+  background-color: white;
+  color: #929292;
+  border-radius: 15px;
+  bottom: 0;
+  transition: 0.1s;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+select:hover {
+  background-color: #99bbad;
+  color: white;
+}
+
+.help {
+  position: absolute;
+  top: 20;
+  right: 20;
+  color: gray;
+  font-size:24px;
+  text-decoration: none;
 }

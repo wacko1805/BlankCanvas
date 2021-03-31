@@ -3,18 +3,36 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>BlankCanvas</title>
             <link rel="stylesheet" href="style.css">
+            <meta name="description" content="An open webpage built by you!">
+            <meta name="keywords" content="HTML, CSS, JavaScript, community, webpage, community built webpage">
+            <meta name="author" content="Jack Sam">
       </head>
       <body>
+
             <header>
                   <h1>Blank<span>Canvas</span></h1>
                   <p>A community built webpage.  <a href="/main/">View here</a></p>
             </header>
+
             <main>
-<form   action="upload.php"  method="post">
-      <textarea  maxlength="500" rows="10" cols="60" type="text"  name="comment" placeholder="Add code" required autocomplete="off" ></textarea> <br>
-      <input type="submit"    name="submit" value="Submit">
-      </div>
-</form>
-</main>
-</body>
+                  
+                  <form action="upload.php" method="post">
+
+                        <textarea  maxlength="1000" rows="10" cols="60" type="text"  name="comment" placeholder="Add code" required autocomplete="off" ></textarea> <br>
+                        
+                        <select name="code-select">
+                              <option value="<p>">Generic text</option>
+                              <option value="<style>">CSS Styling</option>
+                              <option value="<script>">Javascript</option>
+                              <option value="<html>">HTML</option>
+                        </select> 
+
+                        <input type="submit" name="submit" value="Submit">
+
+                  </form>
+
+            </main>
+
+      </body>
+
 </html>
