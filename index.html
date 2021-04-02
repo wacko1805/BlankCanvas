@@ -3,36 +3,34 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>BlankCanvas</title>
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="responsive.css">
             <meta name="description" content="An open webpage built by you!">
             <meta name="keywords" content="HTML, CSS, JavaScript, community, webpage, community built webpage">
             <meta name="author" content="Jack Sam">
       </head>
       <body>
-
-            <header>
-                  <h1>Blank<span>Canvas</span></h1>
-                  <p>A community built webpage.  <a href="/main/">View here</a></p>
-            </header>
-
             <main>
-                  
-                  <form action="upload.php" method="post">
-
-                        <textarea  maxlength="1000" rows="10" cols="60" type="text"  name="comment" placeholder="Add code" required autocomplete="off" ></textarea> <br>
-                        
-                        <select name="code-select">
-                              <option value="<p>">Generic text</option>
-                              <option value="<style>">CSS Styling</option>
-                              <option value="<script>">Javascript</option>
-                              <option value="<html>">HTML</option>
-                        </select> 
-
-                        <input type="submit" name="submit" value="Submit">
-
-                  </form>
-
+            <div class="row">
+                  <div class="column column-one" >
+                              <h1>Blank<span>Canvas</span></h1>
+                              <p>A community built webpage.</p>
+                              <a href="/main/"><button class="button button3">View here</button></a>
+                  </div>
+                  <div class="column column-two" >
+                        <h2>Add your code or text below</h2>
+                        <form action="upload.php" method="post">
+                              <textarea  maxlength="1000"   type="text"  name="comment" placeholder="Add code" required autocomplete="off" ></textarea> <br>  
+                              <label>Select Code type:  </label>        
+                              <select name="code-select">
+                                    <option value="<p>">Generic text</option>
+                                    <option value="<style>">CSS Styling</option>
+                                    <option value="<script>">Javascript</option>
+                                    <option value="<html>">HTML</option>
+                              </select>     <br>
+                              <input type="submit" name="submit" value="Submit">
+                        </form>
+                  </div>
+                </div>
             </main>
-
       </body>
-
 </html>

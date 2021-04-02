@@ -1,112 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://scrollhunt.pixel-fy.com/bars/2/bar.css');
-::-webkit-scrollbar-track {
-    background-color: #99bbad;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root {
+	--main-bg-colour: #e8efff;
+	--main-colour: #6079b6;
   }
 body {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0;
 }
-header {
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-header h1 {
-    font-size: 60px;
-    color: #2E2E2E;
-    margin-bottom: 0;
-}
-header h1 span {
-    color: #5f939a;
-}
-header p {
-    font-size: 20px;
-    color: #525252;
-    margin-bottom: 0;
-}
-  textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 0 0;
-    box-sizing: border-box;
-    border: 5px solid #99bbad;
-    background-color: white;
-    border-radius:  15px;
-    resize: none;
-    height: 200px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    outline: none;
-    margin-bottom: 0;
+* {
+	box-sizing: border-box;
   }
   
+  /* Create two equal columns that floats next to each other */
+  .column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 700px; /* Should be removed. Only for demonstration */
+	transition: 0.3s;
+  }
   
-  input[type=submit] {
-    font-size: 20px;
-    width: 49.5%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 5px solid #99bbad;
-    background-color: white;
-    color: #929292;
-    border-radius: 15px;
-    bottom: 0;
-    transition: 0.1s;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
   }
-  input[type=submit]:hover {
-    background-color: #99bbad;
-    color: white;
-  }
+  
+
+
   main {
-      margin-left: 35%;
-      margin-right: 35%;
+	  margin-left: 20%;
+	  margin-right: 20%;
+	  margin-top: 5%;
+	  margin-bottom: 5%;
+	  border-radius: 5px;
+	  transition: 0.3s;
   }
-  @media only screen and (max-width: 600px) {
-    main {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+
+
+
+  .column-one {
+	  padding-top: 80px;
+	  padding-right: 20px;
+	  padding-left: 20px;
+	  background-color: var(--main-bg-colour);
+	  border-radius: 5px;
+	  position: relative;
+	  transition: 0.3s;
+
+  }
+
+  .column-two {
+	padding: 40px;
+	border-radius: 5px;
+	transition: 0.3s;
+
 }
 
-header a {
-    color: #99bbad;
-    transition: 0.2s;
-    text-decoration: none;
+  .column-one h1 {
+	  color: var(--main-colour);
+	  font-size: 3vw;
+	  margin-bottom: 0;
+	  transition: 0.3s;
+  }
+
+  .column-one p {
+	  color: #4f4f4f;
+	  margin-top: 0;
+	  transition: 0.3s;
+  }
+.row {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
 }
-header a:hover {
-    color: #5f939a;
+.column-one .button {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: var(--main-bg-colour);
+	border: 2px solid var(--main-colour);
+	color: var(--main-colour);
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	transition: 0.1s;
+	font-size: 20px;
+
+
+  }
+  .column-one .button:hover {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  }
+.button3 {width: 96%;}
+
+textarea {
+	border: none;
+	background-color: var(--main-bg-colour);
+	border-radius: 5px;
+	resize: none;
+	width: 100%;
+	height: 65%;
+	padding: 10px;
 }
 
-select  {
-  font-size: 20px;
-  width: 49%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 5px solid #99bbad;
-  background-color: white;
-  color: #929292;
-  border-radius: 15px;
-  bottom: 0;
-  transition: 0.1s;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
+input[type=submit] {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: var(--main-bg-colour);
+	color: var(--main-colour);
+	border: none;
+	text-align: center;
+	width: 100%;
+	padding:  10px 0;
+	border-radius: 12px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.1s;
+	margin-top: 10px;
 }
 
+input[type=submit]:hover {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.column-two h2{
+	color: #4f4f4f;
+}
+select {
+	margin-top: 10px;
+	-moz-appearance: none;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: var(--main-bg-colour);
+	color: var(--main-colour);
+	border: none;
+	text-align: center;
+	padding:  10px 0;
+	border-radius: 12px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.1s;
+	width: 50%;
+	float: right;
+
+}
+label {
+	float: left;
+	padding-top: 18px;
+}
+.select-align {
+	display: inline;
+}
 select:hover {
-  background-color: #99bbad;
-  color: white;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.help {
-  position: absolute;
-  top: 20;
-  right: 20;
-  color: gray;
-  font-size:24px;
-  text-decoration: none;
+header h1 {
+	color: var(--main-colour);
+	font-size: 3vw;
+	margin-bottom: 0;
+	transition: 0.3s;
+	text-align: center;
 }
+
+header p {
+	text-align: center;
+}
+header p a {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: white;
+	border: 2px solid var(--main-colour);
+	color: var(--main-colour);
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	left: 10px;
+	transition: 0.1s;
+	font-size: 20px;
+
+
+  }
+  header p a:hover {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  }
