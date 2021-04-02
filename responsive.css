@@ -54,6 +54,8 @@
     
     
       }
-
+      .column-one p a {
+          display: inline;
+      }
   }
 

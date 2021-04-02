@@ -100,7 +100,14 @@ body {
 
   }
 .button3 {width: 96%;}
-
+.column-one p a {
+	color: #6079b6;
+	text-decoration: none;
+	display: none;
+}
+.column-one p a:hover {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
 textarea {
 	border: none;
 	background-color: var(--main-bg-colour);
